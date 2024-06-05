@@ -9,10 +9,4 @@
   path = "/hello-template"
   function = "transform-hello-template"
 
-[[plugins]]
-  package = "netlify-plugin-cloudinary"
-
-  [plugins.inputs]
-  cloudName = "daz1w86h9"
-
 
