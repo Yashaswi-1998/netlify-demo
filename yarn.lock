@@ -1057,7 +1057,7 @@ negotiator@0.6.3:
 
 "netlify-plugin-imagekit@file:netlify-plugin-imagekit-1.0.0.tgz":
   version "1.0.0"
-  resolved "file:netlify-plugin-imagekit-1.0.0.tgz#addbaba4957aab41e0b9bedfc0767264ddb27df7"
+  resolved "file:netlify-plugin-imagekit-1.0.0.tgz#d548ef8dfa826fdff33d80efb5475d087cc2f512"
   dependencies:
     fast-glob "3.1.1"
     jsdom "21"
