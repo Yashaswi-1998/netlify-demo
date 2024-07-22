@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting started with Netlify Edge Functions</title>
 
-    <style>
-      * {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-          "Open Sans", "Helvetica Neue", sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting started with Netlify Edge Functions</title>
 
-      body {
-        max-width: 600px;
-        margin: auto;
-        line-height: 1.3;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./about/index.html">About</a></li>
-      </ul>
+  <style>
+    * {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+    }
+
+    body {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./about/index.html">About</a></li>
+    </ul>
   </nav>
-    <h1>Getting started with Netlify Edge Functions</h1>
-    <p>Hello and welcome to the tutorial!</p>
-    <p>This tutorial will take you through using Edge Functions on Netlify to build the following URLs:</p>
+  <h1>Getting started with Netlify Edge Functions</h1>
+  <p>Hello and welcome to the tutorial!</p>
+  <p>This tutorial will take you through using Edge Functions on Netlify to build the following URLs:</p>
 
-    <div>
-      <h2>1. Hello, world</h2>
-      <p>
-        We'll write an Edge Function to serve the text
-        <code>Hello, World from the edge!</code>
-      </p>
-      <a href="/hello">/hello</a>
-    </div>
+  <div>
+    <h2>1. Hello, world</h2>
+    <p>
+      We'll write an Edge Function to serve the text
+      <code>Hello, World from the edge!</code>
+    </p>
+    <a href="/hello">/hello</a>
+  </div>
 
-    <div>
-      <h2>2. Serve an HTML template</h2>
-      <p>We'll set up the project to serve static HTML template files from the /public directory.</p>
-      <a href="/hello-template">/hello-html</a>
-    </div>
+  <div>
+    <h2>2. Serve an HTML template</h2>
+    <p>We'll set up the project to serve static HTML template files from the /public directory.</p>
+    <a href="/hello-template">/hello-html</a>
+  </div>
 
-    <div>
-      <h2>3. Add location data to the HTML template</h2>
-      <p>
-        We'll write an Edge Function to intercept a static HTML template and update it using geolocation data at the
-        edge.
-      </p>
-      <a href="/hello-template?method=transform">/hello-html?method=transform</a>
-    </div>
-    <img src="/catOne.jpeg" alt="Cat">
-    <img src="/images/catDog.jpeg" alt="dog" width="400">
-    <img src="/myImages/girl.webp" alt="girl">
-    <img src="https://plus.unsplash.com/premium_photo-1678112180202-cd950dbe5a35?q=80&w=300" width="500" alt="remote">
+  <div>
+    <h2>3. Add location data to the HTML template</h2>
+    <p>
+      We'll write an Edge Function to intercept a static HTML template and update it using geolocation data at the
+      edge.
+    </p>
+    <a href="/hello-template?method=transform">/hello-html?method=transform</a>
+  </div>
 
-  </body>
+  <img srcset="./myImages/girl.webp 200w, ./images/catDog.jpeg 310w" sizes="(max-width: 1024px) 150px, 310px" alt="Cat"
+    src="./catOne.jpeg">
+  <img src="/myImages/girl.webp" alt="girl">
+  <img src="https://plus.unsplash.com/premium_photo-1678112180202-cd950dbe5a35?q=80&w=300" width="500" alt="remote">
+
+</body>
+
 </html>
